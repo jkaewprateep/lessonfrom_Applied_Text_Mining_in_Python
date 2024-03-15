@@ -307,3 +307,9 @@ def document_path_similarity(doc1, doc2):
     # 🐑💬 ➰ For some input too close or too different use of self-comparator.
     return (similarity_score(synsets1, synsets2) + similarity_score(synsets2, synsets1)) / 2
 ```
+
+👧💬 🎈 Finding word similarity scores from documents 1 and 2 in dataset fields. </br>
+
+```
+scores = [ document_path_similarity(x, y) for x, y in zip( paraphrases["D1"], paraphrases["D2"] )];
+```
