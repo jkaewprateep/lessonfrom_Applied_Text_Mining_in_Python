@@ -344,3 +344,10 @@ corpus = gensim.matutils.Sparse2Corpus(X, documents_columns=False)
 # Mapping from word IDs to words (To be used in LdaModel's id2word parameter)
 id_map = dict((v, k) for k, v in vect.vocabulary_.items())
 ```
+
+👧💬 🎈  Prediction of target topics from the trained model, there are 10 sparse from the linear model training spec in the previous step.  </br>
+```
+document_asvector = vect.transform( new_doc );                  # 🧸💬 Transfrom of input document for next step input dimension.
+corpus_generated = gensim.matutils.Sparse2Corpus(document_asvector, documents_columns=False);    # 🧸💬 Create words corpus.
+list(ldamodel[corpus_generated])[0]                             # 🧸💬 Display of target sprase number as list.
+```
