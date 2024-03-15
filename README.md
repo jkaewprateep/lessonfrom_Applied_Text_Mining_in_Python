@@ -144,6 +144,7 @@ numberof_sentences = len(_temp);                   # 🧸💬 Find number of sen
 👨🏻‍🏫💬 There are many public speakers who repeat about removed category person by using the function, this function is work capable of compiler the same and is applicable in a wide ranges of programming syntax support and readable command syntax for programming learners.  </br>
 🐑💬 ➰ How do we build a summarize function in a paragraph without alpha ⁉️  </br>
 🐐💬 The meaning of alpha, beta, and gamma for programming versions is not only majority number but approximately method. The approximate method is not an approximate value but it works with the primary function for absolute results. </br>
+👧💬 🎈 This is alpha in software development, working with the primary function. How is the alpha in real life ⁉️  </br>
 
 ```
 from nltk.tag import pos_tag;
