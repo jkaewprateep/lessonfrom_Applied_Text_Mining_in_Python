@@ -33,6 +33,7 @@ dtype: object
 ###  🧸💬 String matching method
 👧💬 🎈 Iterations of input as a sequence of words from input source as text. </br>
 🦤💬 There are some problems found by ```str.equal``` or white space problems by verifying that the expression string is easy and transferable. </br>
+👧💬 🎈 There is well-known news about object string return verification by the summary method that many programmers are using to verify the outputs from accounting applications and authentication they have found that it is faster but it will not correct in some cases, not because of change of the characters and haze summing number verification but the correct result set may not be equal for multiple times trials. </br>
 
 ```
 for idx, item in enumerate(doc) :
