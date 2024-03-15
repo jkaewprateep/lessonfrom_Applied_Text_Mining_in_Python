@@ -272,3 +272,12 @@ def add_feature(X, feature_to_add):
     from scipy.sparse import csr_matrix, hstack
     return hstack([X, csr_matrix(feature_to_add).T], 'csr')      # 🧸💬 Horizontal stack of compressed sparse matrix input.
 ```
+
+👧💬 🎈 Add the length of the input, and the length of digits in the input as features. The digits input threshold is a magic number called the golden number used for simulation but not as an indicator. </br>
+🐐💬 Precision number and round number are not similar meaning working with information needs to work with estimate scope and the objective of the message for information extraction. </br>
+🐑💬 ➰ Summation and polynomial coefficients are simple methods for verifying decrypt reading messages after a few steps of verification a tablet ruler table can work on a logarithms scale that is because of defussion is added into a summary. It is signatures. </br>
+
+```
+# 🧸💬 Applying feature add function for creating new input sparse result from the current.
+X_traintfidf_length = add_feature(X_traintfidf, [ X_train.str.len(), X_train.apply( lambda x : len( [digit for digit in x if digit.isdigit() ]) ) ]);
+```
