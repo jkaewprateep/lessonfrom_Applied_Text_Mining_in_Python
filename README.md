@@ -230,3 +230,18 @@ largest_tfidf = pd.Series( sorted_tfidf[-20:][::-1], index=feature_names[sorted_
 
 ## 👨🏻‍🏫💬 Integration area from word similarity, how do we optimize speech engines from learning input approximation?
 🦤💬 The steady area indicates learning and processing, errors, and commons in real-time for optimization and development. 
+
+```
+from sklearn.metrics import auc;
+
+tfidf = TfidfVectorizer(min_df=3);                               # 🧸💬 Create TFid object with minimum 3 words appearnce.
+vectorNB = MultinomialNB(alpha=0.1);                             # 🧸💬 Create Multinomial model with alpha = 0.1
+                                                                 # 🧸💬 Polynomail with multi-coefficients.
+vectorNB.fit(tfidf_X_train, y_train);                            # 🧸💬 Traning for weights momentum.
+
+tfidf_X_train = tfidf.fit_transform(X_train);                    # 🧸💬 Array shape property reshape for prediction and train.
+tfidf_X_test = tfidf.transform(X_test);                          # 🧸💬 Array shape property reshape for prediction.
+predictions = vectorNB.predict_proba(tfidf_X_test)[:, 1];        # 🧸💬 Prediction from transformed, (label, "array values")
+
+roc_auc_score(y_test, predictions);                              # 🧸💬 Integration curve and area under curve, Proxima value.
+```
