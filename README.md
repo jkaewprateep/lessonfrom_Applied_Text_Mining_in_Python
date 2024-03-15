@@ -97,3 +97,27 @@ fdist = nltk.FreqDist(text1);
 # 🧸💬 Display top 20 from word appearances.    
 fdist.most_common(20);
 ```
+
+### 🧸💬 Example of the words used frequent output
+```
+[(',', 19420),
+ ('the', 18698),
+ ('.', 16624),
+ ('to', 12149),
+ ('and', 11400),
+ ('a', 8979),
+ ('of', 6510),
+ ('is', 5699),
+ ('in', 5109),
+ ('his', 4693),
+ ("'s", 3682),
+ ('her', 3674),
+ ('he', 3556),
+ ('that', 3517),
+ ('with', 3293),
+ ('him', 2570),
+ ('for', 2433),
+ ('by', 2321),
+ ('The', 2234),
+ ('on', 1925)]
+```
