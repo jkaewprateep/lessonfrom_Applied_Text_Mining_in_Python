@@ -178,5 +178,6 @@ nltk.ngrams(entry, n=5)       # 🧸💬 Example of phase entry into 5 phases if
 ```
 from nltk import jaccard_distance;
 
-jaccard_distance( set(nltk.ngrams(entry, n=3)), set(nltk.ngrams(item, n=3))   # 🧸💬 Calculation of distance of edit to fullfilled the similarity.
+# 🧸💬❤️ Calculation of distance of edit to fullfilled the similarity.
+jaccard_distance( set(nltk.ngrams(entry, n=3)), set(nltk.ngrams(item, n=3))   
 ```
