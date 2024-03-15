@@ -4,7 +4,9 @@ University of Michigan - Applied Text Mining in Python
 ## This note we aim to study text mining and I found interesting of text mining applications from the course examples including medical records and social media as sources.
 
 ### 🧸💬 Sample of input data
-🧸💬 Sample data from hospital for migration of text inputs database records in wide formats into database-capable fields.
+💃( 👩‍🏫 )💬 For text mining solution the problem is there are many text string formats for the scopes since the translation is a step of understanding. </br>
+🦤💬 Since the handwriting problem text mining was introduced by NTLK for pattern learning as a token and normalizer. It can use to find most frequently used word and similarity after we had clean up of the input data to find the meaning and data pattern  </br>
+🧸💬 Sample data from hospital for migration of text inputs database records in wide formats into database-capable fields. </br>
 🐐💬 There are many datetime data input patterns we need to consider from the examples, ```dd/mm/yyyy```, ```d/m/yyyy```, ```mm/dd/yyyy```, ```m/d/yyyy```, ```mm/dd/yy```, ```m, yyyy```, ```yyyy``` and etc. </br>
 
 #### Expression condition (1)
@@ -47,7 +49,7 @@ match_string_two = r"((?:\d{,2}\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|No
 ```
 
 #### Expression condition (3)
-🐯💬 The datatime field may start with digit characters from one to two attached with the phaser contaned ```- or /``` or ```4 digits``` 
+🐯💬 The datatime field may start with digit characters from one to two attached with the phaser contaned ```- or /``` or ```4 digits``` </br>
 
 ```
 match_string_the = r"((?:\d{1,2}(?:-|\/))?\d{4})";
