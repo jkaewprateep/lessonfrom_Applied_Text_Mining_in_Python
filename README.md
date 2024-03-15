@@ -281,3 +281,12 @@ def add_feature(X, feature_to_add):
 # 🧸💬 Applying feature add function for creating new input sparse result from the current.
 X_traintfidf_length = add_feature(X_traintfidf, [ X_train.str.len(), X_train.apply( lambda x : len( [digit for digit in x if digit.isdigit() ]) ) ]);
 ```
+
+👧💬 🎈 The nonword character count indicates attention or significance of the communication message sometimes is hour, minute, and precision word. </br>
+
+```
+# 🧸💬 Create new sparse input by add new feature, a none-word count feature.
+scaler_X_train_length = add_feature(scaler_X_Train, [ X_train_limited.str.len(), 
+                                                      X_train_limited.apply( lambda x : len( [digit for digit in x if digit.isdigit() ]) ), 
+                                                      X_train_limited.str.findall(r'(\W)').str.len() ]);
+```
