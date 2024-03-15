@@ -351,3 +351,8 @@ document_asvector = vect.transform( new_doc );                  # 🧸💬 Trans
 corpus_generated = gensim.matutils.Sparse2Corpus(document_asvector, documents_columns=False);    # 🧸💬 Create words corpus.
 list(ldamodel[corpus_generated])[0]                             # 🧸💬 Display of target sprase number as list.
 ```
+
+👧💬 🎈 Sample output.
+```
+[(0, 0.020003106), (1, 0.020003323), (2, 0.02000128), (3, 0.49677762), (4, 0.020004036), (5, 0.020004127), (6, 0.020002969), (7, 0.020002643), (8, 0.020003127), (9, 0.34319773)]
+```
