@@ -229,7 +229,7 @@ largest_tfidf = pd.Series( sorted_tfidf[-20:][::-1], index=feature_names[sorted_
 ```
 
 ## 👨🏻‍🏫💬 Integration area from word similarity, how do we optimize speech engines from learning input approximation?
-🦤💬 The steady area indicates learning and processing, errors, and commons in real-time for optimization and development. 
+🦤💬 The steady area indicates learning and processing, errors, and commons in real-time for optimization and development. </br>
 
 ```
 from sklearn.metrics import auc;
@@ -244,4 +244,10 @@ tfidf_X_test = tfidf.transform(X_test);                          # 🧸💬 Arra
 predictions = vectorNB.predict_proba(tfidf_X_test)[:, 1];        # 🧸💬 Prediction from transformed, (label, "array values")
 
 roc_auc_score(y_test, predictions);                              # 🧸💬 Integration curve and area under curve, Proxima value.
+```
+
+## 👨🏻‍🏫💬 Sometimes to start implementation a simple one-hot implement method can applied with embedded value in the system.
+👧💬 🎈 Expectations scales selection, the good indicator is divided by half when it starts.  </br>
+
+```
 ```
