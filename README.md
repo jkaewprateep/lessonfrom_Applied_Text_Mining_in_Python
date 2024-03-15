@@ -18,6 +18,7 @@ University of Michigan - Applied Text Mining in Python
 dtype: object
 ```
 
+## 🧸💬 String matching method
 ```
 for idx, item in enumerate(doc) :
     item = item.strip();
@@ -25,15 +26,18 @@ for idx, item in enumerate(doc) :
     answer_one = re.search(match_string_one, item);
 ```
 
+## 🧸💬 String matching results - transform of a datetime data fields for a filter.
 ```
-Passed df modification check
-Passed repeatability check
-Passed index check
-Failed secondary sort sample check
-Values checksums:
-     correct  learner  agree
-0       6695     6695   True
-10     14428    15248  False
-20     16742    16660  False
-30      9275     9275   True
+0        9
+1       84
+2        2
+3       53
+4       28
+      ... 
+495    231
+496    141
+497    186
+498    161
+499    413
+Name: original row number, Length: 500, dtype: int64
 ```
