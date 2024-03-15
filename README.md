@@ -58,7 +58,7 @@ match_string_two = r"((?:\d{,2}\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|No
 match_string_the = r"((?:\d{1,2}(?:-|\/))?\d{4})";
 ```
 
-## 🧸💬 String matching results - transform of a datetime data fields for a filter.
+### 🧸💬 String matching results - transform of a datetime data fields for a filter.
 ```
 0        9
 1       84
@@ -72,4 +72,28 @@ match_string_the = r"((?:\d{1,2}(?:-|\/))?\d{4})";
 498    161
 499    413
 Name: original row number, Length: 500, dtype: int64
+```
+
+## 🦤💬 Lexical diversity - evaluate the richness of word resources input diversity, well-organized dialogues had their patterns and number of frequent words used can determine the dialogue characteristics.
+
+```
+import nltk
+
+nltk.data.path.append("assets/")   # 🧸💬 Working directory to find resources if there are any.
+
+# 🧸💬 Reading file and stored into a local variable.
+with open('assets/document.txt', 'rt', encoding="utf8") as file: 
+    _document = file.read()
+
+# 🧸💬 Breaks input document into sentences, words and phases.
+tokensfrom_document = nltk.word_tokenize(_document);
+
+# 🧸💬 Create text object document for reference.
+text1 = nltk.Text(tokensfrom_document);
+
+# 🧸💬 Couting and identifying words used frequently.
+fdist = nltk.FreqDist(text1); 
+
+# 🧸💬 Display top 20 from word appearances.    
+fdist.most_common(20);
 ```
