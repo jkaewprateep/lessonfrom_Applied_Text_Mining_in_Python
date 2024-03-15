@@ -32,6 +32,7 @@ dtype: object
 
 ###  🧸💬 String matching method
 👧💬 🎈 Iterations of input as a sequence of words from input source as text. </br>
+🦤💬 There are some problems found by ```str.equal``` or white space problems by verifying that the expression string is easy and transferable. </br>
 
 ```
 for idx, item in enumerate(doc) :
