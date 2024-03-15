@@ -216,14 +216,14 @@ predictions = scaler_NB.predict_proba(scaler_xtest)[:, 1];       # 🧸💬 Pred
 ```
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-tfidf = TfidfVectorizer().fit(X_train);
-feature_names = np.array(tfidf.get_feature_names());
+tfidf = TfidfVectorizer().fit(X_train);                          # 🧸💬 Create object for word-in out documents companions.
+feature_names = np.array(tfidf.get_feature_names());             # 🧸💬 Create an array of features name.
 
-scale_tfidf = tfidf.transform( X_train );
-max_tfidf = scale_tfidf.max(0).toarray()[0];
-sorted_tfidx = max_tfidf.argsort();
-sorted_tfidf = max_tfidf[sorted_tfidx]
+scale_tfidf = tfidf.transform( X_train );                        # 🧸💬 Transfrom of the input shape as array property.
+max_tfidf = scale_tfidf.max(0).toarray()[0];                     # 🧸💬 Find maximim number of axis to array.
+sorted_tfidx = max_tfidf.argsort();                              # 🧸💬 Sort by argruments, for substitution in next.
+sorted_tfidf = max_tfidf[sorted_tfidx]                           # 🧸💬 Dataset selection from sorted arguments.
 
-smallest_tfidf = pd.Series( sorted_tfidf[:20], index=feature_names[sorted_tfidx[:20]]);
-largest_tfidf = pd.Series( sorted_tfidf[-20:][::-1], index=feature_names[sorted_tfidx[-20:][::-1]]);
+smallest_tfidf = pd.Series( sorted_tfidf[:20], index=feature_names[sorted_tfidx[:20]]); # 🧸💬 Smallest.
+largest_tfidf = pd.Series( sorted_tfidf[-20:][::-1], index=feature_names[sorted_tfidx[-20:][::-1]]); # 🧸💬 Largest.
 ```
