@@ -7,7 +7,7 @@ University of Michigan - Applied Text Mining in Python
 🧸💬 Sample data from hospital for migration of text inputs database records in wide formats into database-capable fields.
 🐐💬 There are many datetime data input patterns we need to consider from the examples, ```dd/mm/yyyy```, ```d/m/yyyy```, ```mm/dd/yyyy```, ```m/d/yyyy```, ```mm/dd/yy```, ```m, yyyy```, ```yyyy``` and etc. </br>
 
-#### Expression condition
+#### Expression condition (1)
 🐑💬 ➰ The datetime filed must contained in the same word ```( ... )``` and they can be start of the word in the sentence or not ```(?:...)``` and they are contained of the patterns inside ```( ... | ... | ... )```  </br>
 🦭💬 The field may contain of digits from one to two characters, ```\d{1,2}```, and the separator may contain these characteristics ```\/|-``` or not. </br>
 🦭💬 The tab fields next to the oscillatory field contain of digits from one to two and next in two to four digits characters.  </br> ```\d{1,2}```, ```\d{2,4}``` </br>
@@ -28,7 +28,9 @@ dtype: object
 ```
 
 
-## 🧸💬 String matching method
+###  🧸💬 String matching method
+👧💬 🎈 Iterations of input as a sequence of words from input source as text. </br>
+
 ```
 for idx, item in enumerate(doc) :
     item = item.strip();
@@ -37,12 +39,15 @@ for idx, item in enumerate(doc) :
 ```
 
 
-#### Expression condition
-🐨🎁🎵🎶 Maximum of two characters digit contained or name of one of these month field word container ```Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec``` with one or multiple of a small capital letter. Possible repeating of these separators ```- or .\ or , ```. They may contain two to four character digits.
+#### Expression condition (2)
+🐨🎁🎵🎶 Maximum of two characters digit contained or name of one of these month field word container ```Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec``` with one or multiple of a small capital letter. Possible repeating of these separators ```- or .\ or , ```. They may contain two to four character digits. </br>
 
 ```
 match_string_two = r"((?:\d{,2}\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*(?:-|\.|\s|,)\s?\d{,2}[a-z]*(?:-|,|\s)?\s?\d{2,4})";
 ```
+
+#### Expression condition (3)
+🐯💬 The datatime field may start with digit characters from one to two attached with the phaser contaned ```- or /``` or ```4 digits``` 
 
 ```
 match_string_the = r"((?:\d{1,2}(?:-|\/))?\d{4})";
