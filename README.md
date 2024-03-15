@@ -300,8 +300,10 @@ scaler_X_train_length = add_feature(scaler_X_Train, [ X_train_limited.str.len(),
 def document_path_similarity(doc1, doc2):
     """Finds the symmetrical similarity between doc1 and doc2"""
 
-    synsets1 = doc_to_synsets(doc1)
-    synsets2 = doc_to_synsets(doc2)
+    synsets1 = doc_to_synsets(doc1)                             # 🧸💬 Create a zip collection of input word and word corpus.
+    synsets2 = doc_to_synsets(doc2)                             # 🧸💬 Create a zip collection of input word and word corpus.
 
+    # 🧸💬 Similarity ratios.
+    # 🐑💬 ➰ For some input too close or too different use of self-comparator.
     return (similarity_score(synsets1, synsets2) + similarity_score(synsets2, synsets1)) / 2
 ```
