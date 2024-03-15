@@ -266,9 +266,9 @@ avg_length_nondocument_spam = document_nonspam["lenght"].mean();                
 ```
 def add_feature(X, feature_to_add):
     """
-    Returns sparse feature matrix with added feature.
+    Returns sparse feature matrix with added feature.            # 🧸💬 Create float number networks input from features.
     feature_to_add can also be a list of features.
     """
     from scipy.sparse import csr_matrix, hstack
-    return hstack([X, csr_matrix(feature_to_add).T], 'csr')
+    return hstack([X, csr_matrix(feature_to_add).T], 'csr')      # 🧸💬 Horizontal stack of compressed sparse matrix input.
 ```
