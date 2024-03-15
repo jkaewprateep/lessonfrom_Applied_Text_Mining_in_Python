@@ -292,3 +292,16 @@ scaler_X_train_length = add_feature(scaler_X_Train, [ X_train_limited.str.len(),
                                                       X_train_limited.apply( lambda x : len( [digit for digit in x if digit.isdigit() ]) ), 
                                                       X_train_limited.str.findall(r'(\W)').str.len() ]);
 ```
+
+## 🦤💬 Documents para-phrase, document similarity and journeys paradigms 
+👧💬 🎈 Word and Wordnet lexical dictionary using ```nltk``` and ```nltk.corpus``` for word corpus dictionary applies for document similarity or word para-phase scores evaluation. </br>
+
+```
+def document_path_similarity(doc1, doc2):
+    """Finds the symmetrical similarity between doc1 and doc2"""
+
+    synsets1 = doc_to_synsets(doc1)
+    synsets2 = doc_to_synsets(doc2)
+
+    return (similarity_score(synsets1, synsets2) + similarity_score(synsets2, synsets1)) / 2
+```
