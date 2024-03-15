@@ -140,3 +140,13 @@ numberof_sentences = len(_temp);                   # 🧸💬 Find number of sen
 ```
 
 ## 🦤 Phases of the sentence or representing is one identification not only the identify of similar or repeating words but source identification or significant process identifications.
+
+```
+from nltk.tag import pos_tag;
+import collections;
+
+part_ofspeech = pos_tag(text1);                                                     # 🧸💬 Identify phases from sentences by frequently used or attached influences.
+count_partofs = collections.Counter( (speech[1] for speech in part_ofspeech) );     # 🧸💬 Identify a number of the part of speech found from the previous line.
+
+sorted(count_partofs.most_common(5), key=lambda x: x[1], reverse=True);             # 🧸💬 Display top 5 frequent used part of speech found in the sentences from the document example.
+```
