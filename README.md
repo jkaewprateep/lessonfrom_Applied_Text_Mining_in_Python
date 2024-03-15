@@ -121,3 +121,6 @@ fdist.most_common(20);
  ('The', 2234),
  ('on', 1925)]
 ```
+
+## 🦤💬 Whitespaces per sentence of the dialogue document is one of the characteristics indicated of languages, commonly used of word organize applications, document types, age and proficiency, and sometimes including para-phases detection paragraph.
+
