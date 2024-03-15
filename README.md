@@ -356,3 +356,7 @@ list(ldamodel[corpus_generated])[0]                             # 🧸💬 Displ
 ```
 [(0, 0.020003106), (1, 0.020003323), (2, 0.02000128), (3, 0.49677762), (4, 0.020004036), (5, 0.020004127), (6, 0.020002969), (7, 0.020002643), (8, 0.020003127), (9, 0.34319773)]
 ```
+
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Text_Mining_in_Python/blob/main/08.png">
+</p>
