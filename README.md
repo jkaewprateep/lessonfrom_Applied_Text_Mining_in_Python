@@ -124,3 +124,15 @@ fdist.most_common(20);
 
 ## 🦤💬 Whitespaces per sentence of the dialogue document is one of the characteristics indicated of languages, commonly used of word organize applications, document types, age and proficiency, and sometimes including para-phases detection paragraph.
 
+```
+text1_reconstituted = ' '.join(list(text1))
+
+tk = WhitespaceTokenizer();                        # 🧸💬 For creating word token (separator characteristic ) from whitespaces string formats.
+_temp = tk.tokenize(text1_reconstituted);          # 🧸💬 Apply token on the text string object. 
+
+numberof_whitespaces = len(_temp);                 # 🧸💬 Find number of words by whitespace.
+
+#################################################################
+_temp = nltk.sent_tokenize(text1_reconstituted)    # 🧸💬 For creating stntence token.
+numberof_sentences = len(_temp);                   # 🧸💬 Find number of sentences from the text object.
+```
