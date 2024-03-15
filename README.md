@@ -314,7 +314,7 @@ def document_path_similarity(doc1, doc2):
 scores = [ document_path_similarity(x, y) for x, y in zip( paraphrases["D1"], paraphrases["D2"] )];
 ```
 
-👧💬 🎈 Calculation scores from the accuracy matrix, for indicated word phases in word document input.
+👧💬 🎈 Calculation scores from the accuracy matrix, for indicated word phases in word document input.  </br>
 ```
 from sklearn.metrics import accuracy_score
 
@@ -322,4 +322,25 @@ from sklearn.metrics import accuracy_score
 paraphrases['similarity_score'] = np.where( paraphrases['similarity_score'] > 0.75, 1, 0 );
 # 🧸💬  Calculate scores from the accuracy matrix.
 accuracy_score( paraphrases['Quality'], paraphrases['similarity_score'] );
+```
+
+👧💬 🎈 Create id_map of words input as sparse corpus, for working with LDA model ( Latent Dirichlet allocation ).  </br>
+🐑💬 ➰ Compatibility multi-variate distribution, the result of the current node is created from the previous node in the same dialect and creates significant by values.  </br>
+
+```
+# 🧸💬 Create a linear model for general purpose with a minimum 20 words count, less than 20%
+# stop words separator and input token pattern.
+vect = CountVectorizer(min_df=20, max_df=0.2, stop_words='english', 
+                       token_pattern='(?u)\\b\\w\\w\\w+\\b')
+
+# 🧸💬 Fit and transform data input with a linear model.
+X = vect.fit_transform(newsgroup_data)
+
+# 🧸💬 Any corpus can be applied but gensim is famous and suitable for text document tasks.
+# Convert sparse matrix to gensim corpus.
+corpus = gensim.matutils.Sparse2Corpus(X, documents_columns=False)
+
+# 🧸💬 Application of word vector application.
+# Mapping from word IDs to words (To be used in LdaModel's id2word parameter)
+id_map = dict((v, k) for k, v in vect.vocabulary_.items())
 ```
