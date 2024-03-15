@@ -313,3 +313,13 @@ def document_path_similarity(doc1, doc2):
 ```
 scores = [ document_path_similarity(x, y) for x, y in zip( paraphrases["D1"], paraphrases["D2"] )];
 ```
+
+👧💬 🎈 Calculation scores from the accuracy matrix, for indicated word phases in word document input.
+```
+from sklearn.metrics import accuracy_score
+
+# 🧸💬  Consider the interesting word or set of the dictionary.
+paraphrases['similarity_score'] = np.where( paraphrases['similarity_score'] > 0.75, 1, 0 );
+# 🧸💬  Calculate scores from the accuracy matrix.
+accuracy_score( paraphrases['Quality'], paraphrases['similarity_score'] );
+```
