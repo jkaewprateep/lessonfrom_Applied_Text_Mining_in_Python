@@ -183,5 +183,5 @@ jaccard_distance( set(nltk.ngrams(entry, n=3)), set(nltk.ngrams(item, n=3))
 ```
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Text_Mining_in_Python/blob/main/07.png">
+    <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Text_Mining_in_Python/blob/main/07.png">
 </p>
