@@ -191,3 +191,21 @@ edit_distance( entry, item, transpositions=True ), item )
 <p align="center" width="100%">
     <img width="100%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Text_Mining_in_Python/blob/main/07.png">
 </p>
+
+## 👨🏻‍🏫💬 Linear regressions for text sequence data and linear model learning from text vectorize optimizer.
+
+```
+scaler = CountVectorizer().fit(X_train);                         # 🧸💬 Define the linear model you need to perform a function,
+                                                                 # there are interesting and famous for the flower clan 🥀📻
+                                                                 # is power scales because all are the power for them.
+scaler_xtrain = scaler.fit_transform(X_train);                   # 🧸💬 Training for weight momentum can be used for prediction.
+scaler_xtest = scaler.transform(X_test);                         # 🧸💬 Equivalent to np.reshape() or tf.reshape() specific cond
+                                                                 # for use as input prediction function.
+
+scaler_NB = MultinomialNB(alpha=0.1);                            # 🧸💬 Another function model, normalize with alpha = 0.1.
+                                                                 # 🦭💬 Similar to learning rates think about a goat jumps
+                                                                 # across a river of mountains 🐑💬 ➰ Baaaeeeeeee !~
+scaler_NB = scaler_NB.fit(scaler_xtrain, y_train);               # 🧸💬 Traning for weight momentum.
+
+predictions = scaler_NB.predict_proba(scaler_xtest)[:, 1];       # 🧸💬 Prediction and the result, ( label, "array as result" )
+```
