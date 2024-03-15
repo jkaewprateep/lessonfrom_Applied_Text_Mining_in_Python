@@ -159,3 +159,5 @@ sorted(count_partofs.most_common(5), key=lambda x: x[1], reverse=True);         
 ## 🦤💬 NLTK n-grams, unigrams, bigrams, Jaccard distance, and explain of how you find the most matching word or next phase character for sentence and word approximation.
 🧸💬 Does someone try to use neuron network's Dense layer to quickly learning of word simialrity⁉️  </br>
 🧸💬 All are prediction values and we do not need to compare a different set of inputs for the current velocity, how is the faster way to have an evaluation from this approach ⁉️  </br>
+🐑💬 ➰ N-grams as in ChatGPT⁉️ 🧸💬 No N-grams is not word similarity predictions or word phase predictions but it is tokens words from input words or sentence it require some method input to make predictions result  </br>
+
