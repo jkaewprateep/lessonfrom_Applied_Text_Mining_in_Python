@@ -124,7 +124,7 @@ fdist.most_common(20);
 
 ## 🦤💬 Whitespaces per sentence of the dialogue document is one of the characteristics indicated of languages, commonly used of word organize applications, document types, age and proficiency, and sometimes including para-phases detection paragraph.
 👧💬 🎈 Application on para-phrase, word vectors, vectors categorized and plotting of word vector dimension can help about find sources or identify products of the generators. </br>
-🐐💬 There is shuffling method to control of both working team, product, process and identify identification but application is typically because of culture and traditional or organization and individual </br>
+🐐💬 There is a shuffling method to control of both working team, product, process, and identify identification but the application is typical because of culture and traditional or organization and individual </br>
 
 ```
 text1_reconstituted = ' '.join(list(text1))
@@ -138,3 +138,5 @@ numberof_whitespaces = len(_temp);                 # 🧸💬 Find number of wor
 _temp = nltk.sent_tokenize(text1_reconstituted)    # 🧸💬 For creating stntence token.
 numberof_sentences = len(_temp);                   # 🧸💬 Find number of sentences from the text object.
 ```
+
+## 🦤 Phases of the sentence or representing is one identification not only the identify of similar or repeating words but source identification or significant process identifications.
