@@ -195,6 +195,7 @@ edit_distance( entry, item, transpositions=True ), item )
 ## 👨🏻‍🏫💬 Linear regressions for text sequence data and linear model learning from text vectorize optimizer.
 
 ```
+from sklearn.naive_bayes import MultinomialNB
 scaler = CountVectorizer().fit(X_train);                         # 🧸💬 Define the linear model you need to perform a function,
                                                                  # there are interesting and famous for the flower clan 🥀📻
                                                                  # is power scales because all are the power for them.
@@ -208,4 +209,21 @@ scaler_NB = MultinomialNB(alpha=0.1);                            # 🧸💬 Anot
 scaler_NB = scaler_NB.fit(scaler_xtrain, y_train);               # 🧸💬 Traning for weight momentum.
 
 predictions = scaler_NB.predict_proba(scaler_xtest)[:, 1];       # 🧸💬 Prediction and the result, ( label, "array as result" )
+```
+
+## 👨🏻‍🏫💬 TfidfVectorizer for updating document with words appearance company with learning document.
+
+```
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+tfidf = TfidfVectorizer().fit(X_train);
+feature_names = np.array(tfidf.get_feature_names());
+
+scale_tfidf = tfidf.transform( X_train );
+max_tfidf = scale_tfidf.max(0).toarray()[0];
+sorted_tfidx = max_tfidf.argsort();
+sorted_tfidf = max_tfidf[sorted_tfidx]
+
+smallest_tfidf = pd.Series( sorted_tfidf[:20], index=feature_names[sorted_tfidx[:20]]);
+largest_tfidf = pd.Series( sorted_tfidf[-20:][::-1], index=feature_names[sorted_tfidx[-20:][::-1]]);
 ```
