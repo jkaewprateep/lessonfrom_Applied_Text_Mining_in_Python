@@ -250,4 +250,12 @@ roc_auc_score(y_test, predictions);                              # 🧸💬 Inte
 👧💬 🎈 Expectations scales selection, the good indicator is divided by half when it starts.  </br>
 
 ```
+document_spam = spam_data[spam_data["target"] == 1];             # 🧸💬 Pandas selection for spam target email.
+document_nonspam = spam_data[spam_data["target"] != 1];          # 🧸💬 Pandas selection for non-spam target email.
+
+document_spam["lenght"] = document_spam["text"].apply( lambda x: len(x) );  # 🧸💬 Create array of lenght from its input.
+avg_length_document_spam = document_spam["lenght"].mean();                  # 🧸💬 Aveage value of the array create previolusly.
+
+document_nonspam["lenght"] = document_nonspam["text"].apply( lambda x: len(x) ); # 🧸💬 Create array of lenght from its input.
+avg_length_nondocument_spam = document_nonspam["lenght"].mean();                 # 🧸💬 Aveage value of the array create previolusly.
 ```
