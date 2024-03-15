@@ -172,5 +172,5 @@ nltk.ngrams(entry, n=5)       # 🧸💬 Example of phase entry into 5 phases if
 🐑💬 ⁉️ It had the reflection side ⁉️ 🦤💬 Yes that is because we can use both reversed and uniword.  </br>
 
 <p align="center" width="100%">
-    <img width="50%" src="https://github.com/jkaewprateep/lessonfrom_Applied-Machine-Learning-in-Python/blob/main/01.png">
+    <img width="50%" src="https://github.com/jkaewprateep/lessonfrom_Applied_Text_Mining_in_Python/blob/main/06.png">
 </p>
