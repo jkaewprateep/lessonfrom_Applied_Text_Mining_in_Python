@@ -259,3 +259,16 @@ avg_length_document_spam = document_spam["lenght"].mean();                  # �
 document_nonspam["lenght"] = document_nonspam["text"].apply( lambda x: len(x) ); # 🧸💬 Create array of lenght from its input.
 avg_length_nondocument_spam = document_nonspam["lenght"].mean();                 # 🧸💬 Aveage value of the array create previolusly.
 ```
+
+## 🦤💬 There is a problem when we need to add some property after a trained model or program has been created, this method can add of new feature and transfer it as a sparse value ( discrete ) for calculation. 
+👧💬 🎈 This is remarks since sparse, logistic, categorized, and logit shapes are sensitive inputs for learning model and matrix operations.  
+
+```
+def add_feature(X, feature_to_add):
+    """
+    Returns sparse feature matrix with added feature.
+    feature_to_add can also be a list of features.
+    """
+    from scipy.sparse import csr_matrix, hstack
+    return hstack([X, csr_matrix(feature_to_add).T], 'csr')
+```
