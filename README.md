@@ -283,8 +283,8 @@ X_traintfidf_length = add_feature(X_traintfidf, [ X_train.str.len(), X_train.app
 ```
 
 👧💬 🎈 The nonword character count indicates attention or significance of the communication message sometimes is hour, minute, and precision word. </br>
-🦭💬 They are sending medical prescripts in communications for test of the communication because they contain precision values and summarize fast categories for known communicators.
-🐨🎁🎵🎶 Shall us send more medical prescripts ⁉️  🦁💬 They will be a good sleeping pill for communicators.
+🦭💬 They are sending medical prescripts in communications for test of the communication because they contain precision values and summarize fast categories for known communicators. </br>
+🐨🎁🎵🎶 Shall us send more medical prescripts ⁉️  🦁💬 They will be a good sleeping pills for communicators. </br>
 
 ```
 # 🧸💬 Create new sparse input by add new feature, a none-word count feature.
