@@ -167,3 +167,10 @@ nltk.ngrams(entry, n=3)       # 🧸💬 Example of phase entry into 3 phases if
 nltk.ngrams(entry, n=4)       # 🧸💬 Example of phase entry into 4 phases if possible.
 nltk.ngrams(entry, n=5)       # 🧸💬 Example of phase entry into 5 phases if possible.
 ```
+
+## 🦤💬 Attention networks we can use to find attenuation of words near the similarity.
+🐑💬 ⁉️ It had the reflection side ⁉️ 🦤💬 Yes that is because we can use both reversed and uniword.  </br>
+
+<p align="center" width="100%">
+    <img width="50%" src="https://github.com/jkaewprateep/lessonfrom_Applied-Machine-Learning-in-Python/blob/main/01.png">
+</p>
