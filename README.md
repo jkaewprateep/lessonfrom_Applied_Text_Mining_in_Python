@@ -162,6 +162,7 @@ sorted(count_partofs.most_common(5), key=lambda x: x[1], reverse=True);         
 🐑💬 ➰ N-grams as in ChatGPT⁉️ 🧸💬 No N-grams is not word similarity predictions or word phase predictions but it is tokens words from input words or sentence it require some method input to make predictions result  </br>
 
 ```
+🏁 🐑💬 ➰ Unigram 👁️‍🗨️🐣💬 Bigram
 nltk.ngrams(entry, n=3)       # 🧸💬 Example of phase entry into 3 phases if possible.
 nltk.ngrams(entry, n=4)       # 🧸💬 Example of phase entry into 4 phases if possible.
 nltk.ngrams(entry, n=5)       # 🧸💬 Example of phase entry into 5 phases if possible.
